@@ -1,0 +1,378 @@
+<html>
+<head>
+    <title>UltraQuasar - Official page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://iamnavaneeth.w3spaces.com/C-store.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="icon" href="officiallogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        /* Your CSS styles here */
+        html {
+            scroll-behavior: smooth;
+        }
+        ::selection {
+            background:#257B29; 
+        }
+        ::placeholder {
+            color:white;
+            opacity:70%;
+        }
+        .body {
+            margin:0px;
+            background-image: linear-gradient(90deg, black,#301340,#48205E, #6D149C);
+            color:white;
+            scroll-behavior: smooth;
+            outline:none;
+        }
+        html {
+            scroll-behavior:revert;
+        }
+        body {
+            background-attachment: fixed;
+            margin:0px;
+            font-family:verdana;
+            user-select:none;
+            overflow-x:hidden;
+        }
+        .a {
+            background-color:green;
+            color:white;
+            height:70px;
+            width:200px;
+            font-size:20px;
+            cursor:pointer;
+            border:solid 2px;
+        }
+        .imginindex:hover{opacity:0.8;}
+        .more1 {
+            background-color:#180059;
+            color:white;
+            border-radius:12px;
+            min-width:200px;
+            margin:20px;
+            font-size:19px;
+            background-image: linear-gradient(30deg,#342AC0, purple,red);
+            font-family: "Microsoft sans serif";
+            text-align:left;
+            padding:10px;
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                clip-path: inset(100% 100% 0 0);
+            }
+            to {
+                opacity: 1;
+                clip-path: inset(0 0 0 0);
+            }
+        }
+
+        .navbar {
+            background-color:black;
+            color:white;
+            padding:12px 5px;
+            transition-duration:0.4s;
+            overflow:auto;
+            text-align:left;
+            font-size:20px;
+            width:100%;
+            animation: shc 8s infinite;
+            outline:none;
+        }
+        .mainnavbar {
+            background-color:black;
+            color:white;
+            padding:12px 5px;
+            box-shadow:0px 12px 20px 4px black;
+            transition-duration:0.4s;
+            overflow:auto;
+            text-align:left;
+            font-size:20px;
+            width:100%;
+            z-index:991;
+            outline:none;
+        }
+
+        .innavbar {
+            background-color:black;
+            color:white;
+            padding:12px 5px;
+            box-shadow:0px 12px 20px 4px purple;
+            transition-duration:0.4s;
+            overflow:auto;
+            text-align:left;
+            font-size:20px;
+            outline:none;
+        }
+        .vline {
+            border-left: 6px solid green;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+            top: 0;
+        }
+        .forphone {
+            display:none;
+            cursor:pointer;
+        }
+        .homeimg {
+            -webkit-user-drag:none;
+            width:100%;
+            height:100%
+        }
+        .choose {
+            color:white;
+            text-decoration:none; font-family:verdana;  padding:10px 5px; margin:4px;
+            outline:none;
+        }
+        .searcharea {
+            width:328px;
+            height:40px;
+            position:absolute;
+            z-index:100;
+            top:5px;
+            left:70%;
+            font-size:25px;
+            outline:none;
+            display:none;
+            border:none;
+            border-radius:4px;
+        }
+        ::-webkit-scrollbar {
+            width:8px;
+            cursor:grab;
+        }
+        .mobileuser {
+            display:none;
+        }
+        .lda {
+            font-size:13px;
+            padding:6px;
+            color:white;
+            text-decoration:none;
+            transition-duration:0.2s;
+            border-radius:12px;
+            cursor:pointer;
+        }
+        .rdpt {
+            background-color:black; border:none; color:white; border-radius:12px; padding:12px 15px; font-size:20px;
+            transition-duration:0.2s;
+            outline:none;
+        }
+        .rdpt:hover {
+            background-color:white;
+            color:black;
+            font-size:25px;
+        }
+        .rdpt:active {
+            background-color:#DADADA;
+            font-size:15px;
+            color:black;
+        }
+        .lda:hover{background-color:#262626; text-decoration:underline;}
+        @keyframes shc {
+            0%   {box-shadow:0px 4px 50px 4px orange;}
+            25%  {box-shadow:0px 4px 50px 4px lime;}
+            75%  {box-shadow:0px 4px 50px 4px yellow;}
+            100% {box-shadow:0px 4px 50px 4px red;}
+        }
+        .intb {
+            position:absolute;
+            top:45%;
+            left:38%;
+            padding:2px;
+            height:12%;
+            width:25%;
+            outline:none;
+            font-family:microsoft sans serif;
+            font-size:18px;
+            cursor:pointer;
+            border-radius:15px;
+            background-color:#111111;
+            color:white;
+            border:2px solid orange;
+            transition-duration:0.2s;
+            outline:none;
+            animation: intbs 0.7s linear;
+        }
+        .intb:hover {
+            background-color:#DFBD42;
+            color:black;
+            border:3px dotted black;
+        }
+        .intb:active {
+            background-color:#C72428;
+            color:white;
+            border:2px dashed white;
+        }
+        .appsinhere {
+            border-radius:8px; 
+            -webkit-user-drag:none;
+            cursor:pointer;
+            background-color:black;
+            border:4px solid white;
+            outline:none;
+        }
+        @keyframes intbs {
+            from{left:32%;}
+            to{left:38%;}
+        }
+        .choose:hover{background-color:white; color:black; border-radius:4px;}
+        .forphone.hover{background-color:white; color:black; border-radius:4px;}
+        @media only screen and (max-width: 914px) {
+            .choose {
+                display:none;
+                transition-duration:0.4s;
+            }
+            .innavbar {
+                display: none;
+            }
+            .forphone {
+                display:block;
+            }
+            .homeimg {
+                width:490px;
+                height:590px;
+            }
+            .body {
+                overflow-x:hidden;
+            }
+            .homeimg {
+                width:100%;
+            }
+            .fa fa-arrow-right {
+                display:none;
+            }
+            .navbar {
+                width:98%;
+            }
+            .intb {
+                left:20%;
+                top:35%;
+                width:60%;
+                animation:main 0.4s linear;
+                padding:2px;
+            }
+            .impr br{
+                display:none;
+            }
+            @keyframes main {
+                from{left:15%;}
+                to{left:20%;}
+            }
+        }
+    </style>
+</head>
+<body align="middle" class="body" onclick="nonecode()">
+    <div class="mainnavbar" style="position:fixed;">
+        <a style="color:white; text-decoration:none; font-family:audiowide; font-size:23px; padding-left:10px;">UltraQuasar</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="choose" style="text-decoration:none; font-family:verdana;  padding:10px 5px;">Home</a>
+        <a class="choose" href="#more1">Apps</a>
+        <a href="https://ultraquasar.w3spaces.com/limitedai.html" class="choose" style="text-decoration:none; font-family:verdana;  padding:10px 5px;">ChatBot</a>
+    </div>
+    <div>
+        <img src="banner.jpg" class="homeimg">
+        <button class="intb" onclick="intb()"><b>ChatBot &nbsp;&nbsp;<i class="fa fa-arrow-right"></i></b></button>
+    </div>
+    <h2 style="cursor:pointer; outline:none;">More  <i class="fa fa-arrow-down"></i></h2>
+    <h1 style="font-family:microsoft sans serif;">Why our website? Let me help you.</h1>
+    <p style="font-family:microsoft sans serif;" class="impr">At present we are still not innovative. But soon we will devolop this.<br>
+    However your data is hashed in your usage of our website by different algorithms. This makes it more secure <i class="fa fa-lock"></i>.<br>
+    If you are experiencing any problems feel free to contact us.  We would try our best to resolve it and give you best experience.<br>
+    {REPORT}Report is used to report a problem of the website's bugs and the feautres that could be in it, this is also used to report a user's behaviour.<br>
+    {doubts}This is used to ask doubts to a person about the website's feautres.
+    </p>
+    <button class="rdpt" onclick="report()" >Report</button> <button class="rdpt" onclick="doubts()">Doubts</button>
+    <br><br><br>
+    <div class="navbar">
+        <div style="text-align:center;">
+            <u><a style="font-family:microsoft sans serif; font-size:29px;">Explore services</a></u>
+            <p style="font-family:microsoft sans serif;">IT consultancy service now available</p>
+            <button class="rdpt" style="background-color:white; color:black;" onclick="consult()">Consult</button>
+            <button class="rdpt" style="background-color:white; color:black;" onclick="downloadkey()">Download</button>
+        </div>
+        <div class="more1" id="more1"><h1><i class="fa fa-bars"></i> All Apps</h1>
+        Created Webs and Apps (Apps cannot be fetched from a distant loaction): <br><br>
+        <img src="generate.png"  width="190" height="190" class="appsinhere" onclick="tpc()">
+        </div>
+    </div>
+    <br>
+    <br>
+    <h1 style="font-family:microsoft sans serif;">Open Source</h1>
+    <p style="font-family:microsoft sans serif;">Apps and Websites we create are free for all. We depend on freemium plans for maintanace.<br>
+    </p>
+    <br>
+    <br>
+    <div class="navbar">
+        <p>Contact us:</p>
+        <a class="lda" title="Click to copy" onclick="copy()">E-mail: ultraquarsarinc@gmail.com</a><br><br>
+        <a class="lda" href="https://www.instagram.com/ultraquasarr"><i class="fa fa-instagram" style="color:#DD1BC9;"></i> @ultraquasarr</a>
+        <center>
+        <p style="font-size:12px;">Thank you for visiting our website.</p></center>
+    </div>
+</body>
+<script>
+    let currentPosition;
+    function downloadkey() {
+	
+	}
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(success, error);
+    }
+
+    function success(position) {
+        currentPosition = position;
+    }
+
+    function error() {
+        alert("Sorry, try again");
+        location.reload();
+    }
+
+    function intb() {
+        window.open("https://ultraquasar.w3spaces.com/limitedai.html", "_parent");
+    }
+
+    function tpc() {
+        window.open("https://ultraquasar.w3spaces.com/limitedai.html", "_parent");
+    }
+
+    function report() {
+        window.location.href = "mailto:ultraquarsarinc@gmail.com?subject=Complaint&body=I%20Have%20A%20Complaint%20On:";
+    }
+
+    function doubts() {
+        window.location.href = "mailto:ultraquarsarinc@gmail.com?subject=Question&body=%20I%20have%20doubts:";
+    }
+
+    function consult() {
+        if (currentPosition) {
+            window.location.href = "mailto:ultraquarsarinc@gmail.com?subject=Consultation&body=%20Real%20Name:%0D%0A%20Phone%20Number:%0D%0A%20Email%20Address:%0D%0A%20MyTopic%20and%20Needs:%0D%0AYou%20by%20entering%20this%20have%20agreed%20to%20our%20terms%20and%20conditions.%20You%20have%20now%20been%20given%20consumer%20code%20" + currentPosition.coords.latitude + "ok2k" + currentPosition.coords.longitude + ".%20Thank%20you%20visit%20again.";
+        } else {
+            alert("Location not available. Please allow location access.");
+        }
+    }
+
+    function copy() {
+        navigator.clipboard.writeText("ultraquarsarinc@gmail.com");
+    }
+
+    function start() {
+        var web1 = document.getElementById("websearch")
+        if (web1.style.display == "block") {
+            web1.style.display = "none";
+        } else {
+            web1.style.display = "block";
+            web1.focus();
+        }
+    }
+</script>
+</html>
